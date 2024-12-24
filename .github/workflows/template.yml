@@ -3,10 +3,11 @@ name: Build and Deploy Workflow
 on:
   workflow_call:
     inputs:
-      VITE_MAP_API_KEY:
+      VITE_BASE_PATH:
         required: true
         type: string
-      VITE_BASE_PATH:
+    secrets:
+      VITE_MAP_API_KEY:
         required: true
         type: string
 

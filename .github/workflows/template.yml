@@ -27,7 +27,7 @@ jobs:
 
       - name: Build project
         run: npm run build
-        end:
+        env:
           VITE_MAP_API_KEY: ${{ inputs.VITE_MAP_API_KEY }}
           VITE_BASE_PATH: ${{ inputs.VITE_BASE_PATH }}
 
@@ -48,7 +48,7 @@ jobs:
 
       - name: Build project
         run: npm run build
-        end:
+        env:
           VITE_MAP_API_KEY: ${{ inputs.VITE_MAP_API_KEY }}
           VITE_BASE_PATH: ${{ inputs.VITE_BASE_PATH }}
 
